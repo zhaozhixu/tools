@@ -6,7 +6,7 @@ echo "Enter your password:"
 read -s passwd
 
 echo $passwd | sudo -S apt-get -y install build-essential cmake git wget unzip \
-                    python python3 pkg-config python-dev python-numpy \
+                    python python3 pkg-config python-dev python-numpy clang \
                     python3-dev python3-numpy libgtk2.0-dev libavcodec-dev \
                     libavformat-dev libswscale-dev libncurses-dev libtbb2 \
                     libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev \
