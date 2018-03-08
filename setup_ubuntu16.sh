@@ -1,6 +1,6 @@
 #! /bin/bash
 
-ncpu=`cat /proc/cpuinfo | grep "physical id" | sort | uniq | wc -l`
+ncpu=`cat /proc/cpuinfo | grep "processor" | sort | uniq | wc -l`
 path_append=""
 echo "Enter your password:"
 read -s passwd
