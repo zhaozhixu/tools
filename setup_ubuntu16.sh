@@ -10,7 +10,7 @@ echo $passwd | sudo -S apt-get -y install build-essential cmake git wget unzip \
                     python3-dev python3-numpy libgtk2.0-dev libavcodec-dev \
                     libavformat-dev libswscale-dev libncurses-dev libtbb2 \
                     libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev \
-                    libdc1394-22-dev libxpm-dev libgif-dev htop gdb ssh
+                    libdc1394-22-dev libxpm-dev libgif-dev htop gdb ssh curl
 mkdir ~/Downloads ~/source
 
 # install global and setup global tag database
@@ -47,3 +47,6 @@ cp -r ~/source/emacs-config/* ~/.emacs.d
             -DBUILD_opencv_python3=ON \
             .. \
      && make -j$ncpu && echo $passwd | sudo -S make install -j$ncpu)
+
+# install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
