@@ -10,7 +10,7 @@ echo $passwd | sudo -S apt-get -y install build-essential cmake git wget unzip \
                     python3-dev python3-numpy libgtk2.0-dev libavcodec-dev \
                     libavformat-dev libswscale-dev libncurses-dev libtbb2 \
                     libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev \
-                    libdc1394-22-dev libxpm-dev libgif-dev htop gdb
+                    libdc1394-22-dev libxpm-dev libgif-dev htop gdb ssh
 mkdir ~/Downloads ~/source
 
 # install global and setup global tag database
